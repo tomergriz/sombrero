@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  font-family: 'Roboto Flex', sans-serif;
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+
+.footer {
+  top: 94%;
+  bottom: 0%;
+}
+
+footer div {
+  margin: 0 0 3rem 3rem;
+}
+
+nav li {
+  flex-basis: 10%;
+}
+
+.coding {
+  flex-basis: 70%;
+  color: grey;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #3d6ded;
+}
+
+/* this is the card board area*/
+.card {
+  align-items: center;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 50px;
+}
+
+.box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  background: none;
+  text-align: left;
+}
+
+section.card h1 {
+  margin-top: 0;
+  border-bottom: 3px double #7D1521;
+  width: 100%;
+}
+
+section.card div {
+  flex-basis: 32%;
+  border: 3px ridge #C52530;
+  background-color: #B7D5D6;
+  border-radius: 10px;
+  padding: 0 0.4rem;
+}
+
+h3,
+h2 {
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+  height: 4rem;
+}
+
+section.card p {
+  margin-top: 0;
+}
+
+.fullWidth {
+  display: block;
+  width: 100%;
+}
+
+.google-maps iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.google-maps .button {
+  border: none;
+  text-align: right;
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  color: white;
+  background-color: #C52530;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+
+button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+@keyframes cardRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cardRotate {
+  animation-name: cardRotate;
+  animation-duration: 0.7s;
+  animation-delay: 1s;
+}
+
+@keyframes cardBackgroundChange {
+  50% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.cardBackgroundChange {
+  animation: cardBackgroundChange 0.2s ease-in-out;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+.socials ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+.socials a {
+  display: block;
+  color: black;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.socials a:hover {
+  background-color: aliceblue;
+}
+
+fieldset {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0 1rem 1rem 1rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+textarea {
+  height: 10rem;
+}
